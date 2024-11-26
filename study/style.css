@@ -1,0 +1,278 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+.w {
+    width: auto;
+    margin: 0 auto;
+    position: relative;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.header {
+    height: 100px;
+    margin: 0px auto;
+    position: relative;
+}
+
+.bg-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1920px;
+    height: 814px;
+    z-index: -1;
+    background-image: url('images/best.png');
+    background-size: contain;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+.logo {
+    width: 266px;
+    height: 97px;
+    background-color: #e8024d;
+    float: left;
+    margin-left: calc((1920px - 266px - 60px * 4) / 3);
+    top: 0;
+    position: relative;
+}
+
+.nav {
+    height: 100%;
+}
+
+.left-nav {
+    float: left;
+    margin-left: 60px;
+}
+
+.left-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.left-nav ul li {
+    display: block;
+    float: left;
+    height: 100%;
+    color: white;
+    padding: 20px;
+}
+
+.left-nav ul li a {
+    display: block;
+    height: 97px;
+    padding: 0 30px;
+    line-height: 97px;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.right-nav {
+    float: right;
+    margin-right: 60px;
+}
+
+.right-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.right-nav ul li {
+    display: block;
+    float: left;
+    height: 100%;
+    color: white;
+    padding: 20px;
+}
+
+.right-nav ul li a {
+    display: block;
+    height: 97px;
+    padding: 0 30px;
+    line-height: 97px;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.grey {
+    position: relative;
+    width: 1920px;
+    height: 450px;
+    background-image: url('images/grey.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 844px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.inner {
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bofang {
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 372px;
+    left: 700px;
+    transform: translate(-50%, -50%);
+}
+
+.white {
+    position: relative;
+    width: 1920px;
+    height: 844px;
+    background-image: url('images/huaban.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 844px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.grey2 {
+    position: relative;
+    width: 1920px;
+    height: 390px;
+    background-image: url('images/grey.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 1000px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.grey3 {
+    position: relative;
+    width: 1920px;
+    height: 349px;
+    background-image: url('images/shengrey.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 1200px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.inner2 {
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 77px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.white2 {
+    position: relative;
+    width: 1920px;
+    height: 844px;
+    background-image: url('images/huaban.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 1300px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.inner3 {
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 170px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.grey4 {
+    position: relative;
+    width: 1920px;
+    height: 337px;
+    background-image: url('images/shengrey2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 1300px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.inner4 {
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 90px;
+    left: 50%;
+    transform: translate(-50%);
+
+}
+
+.grey5 {
+    position: relative;
+    width: 1920px;
+    height: 980px;
+    background-image: url('images/last.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 1500px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.p1 {
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 736px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.p2 {
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 904px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.p3 {
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 566px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.shangbiao {
+    position: relative;
+    width: 1920px;
+    height: 34px;
+    background-image: url('images/shangbiao.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 1500px;
+    left: 50%;
+    transform: translateX(-50%);
+}
