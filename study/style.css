@@ -6,7 +6,7 @@
 
 .w {
     width: auto;
-    margin: 0 auto;
+    margin: auto auto;
     position: relative;
 }
 
@@ -28,91 +28,94 @@ a {
 .bg-container {
     position: absolute;
     top: 0;
-    left: 0;
+    left: 50%;
     width: 1920px;
     height: 814px;
     z-index: -1;
-    background-image: url('images/best.png');
+    background-image: url('https: //zhangxiaohan.oss-cn-beijing.aliyuncs.com/undefinedbest.png');
     background-size: contain;
-    background-position: center top;
     background-repeat: no-repeat;
+    transform: translate(-50%, 0);
 }
 
 .logo {
     width: 266px;
     height: 97px;
     background-color: #e8024d;
-    float: left;
-    margin-left: calc((1920px - 266px - 60px * 4) / 3);
     top: 0;
-    position: relative;
-}
-
-.nav {
-    height: 100%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, 0);
 }
 
 .left-nav {
-    float: left;
-    margin-left: 60px;
+    position: absolute;
+    top: 0;
+    left: 60px;
+    height: 50px;
 }
 
 .left-nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
+    color: #ffffff;
 }
 
 .left-nav ul li {
-    display: block;
     float: left;
+    padding: 10px;
     height: 100%;
-    color: white;
-    padding: 20px;
+    font-size: 20px;
 }
 
 .left-nav ul li a {
     display: block;
-    height: 97px;
-    padding: 0 30px;
-    line-height: 97px;
-    font-size: 18px;
     text-decoration: none;
+    font-size: 18px;
 }
 
 .right-nav {
-    float: right;
-    margin-right: 60px;
+    position: absolute;
+    top: 0;
+    right: 60px;
+    height: 50px;
+
 }
 
 .right-nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
+    color: #ffffff;
 }
 
 .right-nav ul li {
-    display: block;
     float: left;
+    padding: 10px;
     height: 100%;
-    color: white;
-    padding: 20px;
+    font-size: 20px;
 }
 
 .right-nav ul li a {
     display: block;
-    height: 97px;
-    padding: 0 30px;
-    line-height: 97px;
-    font-size: 18px;
     text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.logo {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .grey {
     position: relative;
     width: 1920px;
     height: 450px;
-    background-image: url('images/grey.png');
+    background-color: #eae7e8;
     background-size: cover;
     background-repeat: no-repeat;
     top: 844px;
@@ -142,10 +145,10 @@ a {
     position: relative;
     width: 1920px;
     height: 844px;
-    background-image: url('images/huaban.png');
+    background-image: url('https: //zhangxiaohan.oss-cn-beijing.aliyuncs.com/undefined%E7%94%BB%E6%9D%BF.png');
     background-size: cover;
     background-repeat: no-repeat;
-    top: 844px;
+    top: 1000px;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -154,10 +157,10 @@ a {
     position: relative;
     width: 1920px;
     height: 390px;
-    background-image: url('images/grey.png');
+    background-color: whitesmoke;
     background-size: cover;
     background-repeat: no-repeat;
-    top: 1000px;
+    top: 1300px;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -166,10 +169,10 @@ a {
     position: relative;
     width: 1920px;
     height: 349px;
-    background-image: url('images/shengrey.png');
+    background-color: #6f6d6d;
     background-size: cover;
     background-repeat: no-repeat;
-    top: 1200px;
+    top: 1300px;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -178,7 +181,7 @@ a {
     width: auto;
     height: auto;
     position: absolute;
-    top: 77px;
+    top: 50px;
     left: 50%;
     transform: translate(-50%);
 }
@@ -187,10 +190,10 @@ a {
     position: relative;
     width: 1920px;
     height: 844px;
-    background-image: url('images/huaban.png');
+    background-image: url('https: //zhangxiaohan.oss-cn-beijing.aliyuncs.com/undefined%E7%94%BB%E6%9D%BF.png');
     background-size: cover;
     background-repeat: no-repeat;
-    top: 1300px;
+    top: 1450px;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -208,10 +211,10 @@ a {
     position: relative;
     width: 1920px;
     height: 337px;
-    background-image: url('images/shengrey2.png');
+    background-color: #464944;
     background-size: cover;
     background-repeat: no-repeat;
-    top: 1300px;
+    top: 1450px;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -230,10 +233,10 @@ a {
     position: relative;
     width: 1920px;
     height: 980px;
-    background-image: url('images/last.png');
+    background-image: url('https: //zhangxiaohan.oss-cn-beijing.aliyuncs.com/undefinedlast.png');
     background-size: cover;
     background-repeat: no-repeat;
-    top: 1500px;
+    top: 1800px;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -251,7 +254,7 @@ a {
     width: auto;
     height: auto;
     position: absolute;
-    top: 904px;
+    top: 750px;
     left: 50%;
     transform: translate(-50%);
 }
@@ -269,7 +272,7 @@ a {
     position: relative;
     width: 1920px;
     height: 34px;
-    background-image: url('images/shangbiao.png');
+    background-image: url('https: //zhangxiaohan.oss-cn-beijing.aliyuncs.com/undefinedshangbiao.png');
     background-size: cover;
     background-repeat: no-repeat;
     top: 1500px;
