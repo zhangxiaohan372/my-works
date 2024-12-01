@@ -1,0 +1,270 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+.w {
+    width: auto;
+    margin: auto auto;
+    position: relative;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.header {
+    height: 100px;
+    margin: 0px auto;
+    position: relative;
+}
+
+.bg-container {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 1920px;
+    height: 814px;
+    z-index: -1;
+    background-image: url('https: //zhangxiaohan.oss-cn-beijing.aliyuncs.com/undefinedbest.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: translate(-50%, 0);
+}
+
+.logo {
+    width: 266px;
+    height: 97px;
+    background-color: #e8024d;
+    top: 0;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, 0);
+}
+
+.left-nav {
+    position: absolute;
+    top: 0;
+    left: 60px;
+    height: 50px;
+}
+
+.left-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+}
+
+.left-nav ul li {
+    float: left;
+    padding: 10px;
+    height: 100%;
+    font-size: 20px;
+}
+
+.left-nav ul li a {
+    display: block;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.right-nav {
+    position: absolute;
+    top: 0;
+    right: 60px;
+    height: 50px;
+
+}
+
+.right-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+}
+
+.right-nav ul li {
+    float: left;
+    padding: 10px;
+    height: 100%;
+    font-size: 20px;
+}
+
+.right-nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.logo {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.grey {
+    position: relative;
+    width: 1920px;
+    height: 450px;
+    background-color: #eae7e8;
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 844px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.inner {
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bofang {
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 372px;
+    left: 700px;
+    transform: translate(-50%, -50%);
+}
+
+.white {
+    position: relative;
+    width: 1920px;
+    height: 844px;
+    background-image: url('https://zhangxiaohan.oss-cn-beijing.aliyuncs.com/undefined%E7%94%BB%E6%9D%BF.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 1000px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.grey2 {
+    position: relative;
+    width: 1920px;
+    height: 390px;
+    background-color: whitesmoke;
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 1300px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.grey3 {
+    position: relative;
+    width: 1920px;
+    height: 349px;
+    background-color: #6f6d6d;
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 1300px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.inner2 {
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.white2 {
+    position: relative;
+    width: 1920px;
+    height: 844px;
+    background-image: url('https://zhangxiaohan.oss-cn-beijing.aliyuncs.com/undefined%E7%94%BB%E6%9D%BF.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 1450px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.inner3 {
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 170px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.grey4 {
+    position: relative;
+    width: 1920px;
+    height: 337px;
+    background-color: #464944;
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 1450px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.inner4 {
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 90px;
+    left: 50%;
+    transform: translate(-50%);
+
+}
+
+.grey5 {
+    position: relative;
+    width: 1920px;
+    height: 980px;
+    background-image: url('https://zhangxiaohan.oss-cn-beijing.aliyuncs.com/undefinedlast.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 1800px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.p1 {
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 736px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.p2 {
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 750px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.p3 {
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 566px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
