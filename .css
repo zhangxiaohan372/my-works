@@ -1,0 +1,212 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 640px;
+    height: 360px;
+    background-color: #fff;
+    position: relative;
+    margin: 0 auto;
+    border: 6px solid #a6edf8;
+    border-radius: 8px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    box-shadow: 2px 2px 5px rgba(150, 232, 247, 0.3);
+}
+
+.header-box {
+    width: 150px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+}
+
+.header-box img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+
+}
+
+.header-box::after {
+    content: '欢迎回来';
+    margin-left: 10px;
+    font-style: 13px;
+}
+
+.touxiang-box {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 10px;
+    right: 10px;
+}
+
+.touxiang-box img {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #f8f8f8;
+}
+
+.biaoti {
+    width: 505px;
+    height: 31px;
+    display: flex;
+    list-style: none;
+    margin-top: 20px;
+    background-color: #e5f8ff;
+    margin-left: 47px;
+    margin-right: 47px;
+    border-radius: 5px;
+}
+
+.biaoti ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.biaoti li {
+    font-size: 7px;
+    display: flex;
+    color: #7d7f7f;
+    justify-content: space-around;
+}
+
+.biaoti li.dangqian {
+    color: #54cfd8;
+}
+
+.shoujian-box {
+    width: 100%;
+    height: 50px;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+.shoujian-box img {
+    width: 30px;
+    height: 30px;
+    margin-left: 5px;
+}
+
+.shoujian-box::before {
+    content: '邮箱动态-收件箱';
+    font-size: 14px;
+    margin-right: auto;
+    color: #000;
+}
+
+.weidu,
+.yidu {
+    width: 42px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    background-color: #bef6ff;
+    border-radius: 4px;
+    position: relative;
+    justify-content: center;
+}
+
+.weidu img,
+.yidu img {
+    width: 7px;
+    height: 7px;
+}
+
+.weidu .text,
+.yidu .text {
+    margin-left: 7px;
+    font-size: 6px;
+    white-space: nowrap;
+    color: #7d7f7f;
+}
+
+.weidu:hover::after,
+.yidu:hover::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -8px;
+    transform: translateY(-50%);
+    border-width: 4px;
+    border-style: solid;
+    border-color: transparent transparent transparent #e6f9fc;
+}
+
+.weidu:hover,
+.yidu:hover {
+    background-color: #e6f9fc;
+}
+
+.xinxi {
+    width: 455px;
+    height: 140px;
+    overflow-y: auto;
+    position: absolute;
+    top: 170px;
+    left: 80px;
+    right: 60px;
+}
+
+.message {
+    width: 440px;
+    height: 41px;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to right, #d6f7fc, white);
+    border-radius: 5px;
+    margin-top: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+
+.inner-box-img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.inner-box-text {
+    font-size: 6px;
+    color: #a2a3a3
+}
+
+.message-time {
+    margin-left: 30px;
+    color: #a2a3a3;
+    font-size: 6px;
+}
+
+.message-actions {
+    display: flex;
+    align-items: center;
+}
+
+.message-reply,
+.message-delete {
+    color: #a2a3a3;
+    font-size: 6px;
+    margin-left: 80px;
+}
+
+.dibu {
+    display: flex;
+    margin-top: 100px;
+}
