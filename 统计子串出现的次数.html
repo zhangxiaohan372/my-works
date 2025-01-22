@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>统计子串出现次数</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input {
+            width: 200px;
+            padding: 8px;
+            margin-bottom: 15px;
+        }
+        button {
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+<body>
+    <label for="one">请输入一个字符串：</label><br>
+    <input type="text" id="one"><br>
+    <label for="two">请输入子串：</label><br>
+    <input type="text" id="two"><br>
+    <button id="btn">确认</button>
+    <p id="result">子串出现的次数为：</p>
+    <script>
+        function count(mainString, subString) {
+            let count = 0;
+            for (let i = 0; i <= mainString.length - subString.length; i++) {
+                let match = true;
+                for (let j = 0; j < subString.length; j++) {
+                    if (mainString[i + j] !== subString[j]) {
+                        match = false;
+                        break;
+                    }
+                }
+                if (match) {
+                    count++;
+                }
+            }
+            return count;
+        }
+        const button = document.querySelector('#btn');
+        const one = document.querySelector('#one');
+        const two = document.querySelector('#two');
+        const result = document.querySelector('#result');
+        button.addEventListener('click', function () {
+            const main = one.value;
+            const sub = two.value;
+            const res = count(main, sub);
+            result.textContent='子串出现的次数为：'
+            result.textContent += res;
+        });
+    </script>
+</body>
+
+</html>
