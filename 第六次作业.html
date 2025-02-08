@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <div id="currentTime"></div>
+    <label for="username">账号</label>
+    <input type="text" id="username"><br>
+    <label for="password">密码</label>
+    <input type="text" id="password"><br>
+    <button id="registerBtn">注册</button>
+    <button id="getUserBtn">获取用户列表</button>
+    <ul id="user"></ul>
+    <script>
+        const currentTime = document.querySelector('#currentTime')
+        const registerBtn = document.querySelector('#registerBtn')
+        const getUserBtn = document.querySelector('#getUserBtn')
+        const user = document.querySelector('#user')
+        const getTimeUrl ='https://worldtimeapi.org/api/ip'
+        const registerUrl = 'https://reqres.in/api/register'
+        const userUrl = 'https://reqres.in/api/users'
+
+        async function getCurrentTime() {
+            try {
+                const response = await axios.get(getTimeUrl)
+                currentTime.textContent = `当前时间为:${response.data.time}`
+                console.log('获取当前时间响应报文：', response.data);
+            } catch (error) {
+                console.error('获取当前时间出错：', error)
+            }
+        }
+        getCurrentTime();
+
+        registerBtn.addEventListener('click', async () => {
+            const username = document.querySelector('#username').value;
+            const password = document.querySelector('#password').value;
+            try {
+                const response = await axios.post(registerUrl, {
+                    username,
+                    password
+                });
+                console.log('注册响应报文：', response.data);
+            } catch (error) {
+                console.error('注册失败', error)
+            }
+        });
+
+        getUserBtn.addEventListener('click', async () => {
+            try {
+                const response = await axios.get(userUrl);
+                user.innerHTML = '';
+                response.data.forEach(userItem => {
+                    const listItem = document.createElement('li');
+                    listItem.textContent = userItem.username;
+                    user.appendChild(listItem);
+                });
+                console.log('获取用户列表响应报文:', response.data);
+            } catch (error) {
+                console.error('获取用户列表出错:', error);
+            }
+        });
+    </script>
+</body>
+
+</html>
